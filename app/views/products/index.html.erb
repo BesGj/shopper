@@ -1,0 +1,20 @@
+<h2>
+  <%= link_to "Categories", root_path %> /
+  <%= @category.title %> /
+
+  Products
+</h2>
+
+<ol>
+  <% @products.each do |product|  %>
+  <li>
+
+    <%= product.title %> <%= product.price %>
+    <ul>
+      <% product.variants.each do |variant|  %>
+      <%= variant.title %> <%= variant.price %>
+      <% end  %>
+    </ul>
+  </li>
+<% end  %>
+</ol>

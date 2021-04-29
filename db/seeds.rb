@@ -1,7 +1,5 @@
 require 'faker'
 
-Product.destroy_all
-
 PRODUCTS_COUNT = 100
 
 MAX_CATEGORIES = 3
